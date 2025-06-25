@@ -58,7 +58,96 @@
         </div>
       </section>
 
+      <section id="form-container">
+        <form action="#" method="post">
+          <h2>Registro do Operador</h2>
 
+          <!-- Campo de texto -->
+          <label for="nome">Codinome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <!-- Campo de email -->
+          <label for="email">Email de Operações</label>
+          <input type="email" name="email" id="email" required>
+
+          <!-- Campo de senha -->
+          <label for="senha">Senha de Acesso</label>
+          <input type="password" name="senha" id="senha" required>
+
+           <!-- Checkbox (múltipla escolha) -->
+           <label>Especializações</label>
+           <div>
+            <input type="checkbox" name="especializações" value="infiltracao"> Infiltração
+           </div>
+           <div>
+            <input type="checkbox" name="especializações" value="camuflagem"> Camuflagem
+           </div>
+           <div>
+            <input type="checkbox" name="especializações" value="reconhecimento"> Reconhecimento
+           </div>
+
+          <label>Identificação de Gênero</label>
+          <div>
+            <input type="radio" name="sexo" value="masculino"> Masculino
+            <input type="radio" name="sexo" value="feminino"> Feminino
+            <input type="radio" name="sexo" value="não-informado"> Não Classificado
+          </div>
+
+          <label for="curso">Treinamento Desejado</label>
+          <select name="curso" id="curso">
+            <option value="assalto"> Assalto</option>
+            <option value="defesa"> Defesa</option>
+            <option value="estrategia"> Estratégia Avançada</option>
+          </select>
+        
+          <label for="mensagem">Mensagem para o comando</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        
+          <button type="submit">Confirmar Registro</button>
+        </form>
+      </section>
+
+      <section id="tabela-container">
+        <h2>Intel de Operadores</h2>
+        <table border="1">
+          <tr>
+            <th>Codinome</th>
+            <th>Idade</th>
+            <th>Base de Operações</th>
+            <th>Status de Lealdade</th>
+          </tr>
+          <tr>
+            <td>Luis</td>
+            <td>23</td>
+            <td>Georgia</td>
+            <td>✅ Ativo</td>
+          </tr>
+          <tr>
+            <td>Pedro</td>
+            <td>28</td>
+            <td>washington</td>
+            <td>❌ Desertor</td>
+          </tr>
+          <tr>
+            <td>Carlos</td>
+            <td>53</td>
+            <td>Buenos Aires</td>
+            <td>❌ Desertor</td>
+          </tr>
+          <tr>
+            <td>Britney</td>
+            <td>29</td>
+            <td>Beverly Hills</td>
+            <td>✅ Ativo</td>
+          </tr>
+          <tr>
+            <td>Victoria</td>
+            <td>36</td>
+            <td>Seatle</td>
+            <td>❌ Desertora</td>
+          </tr>
+        </table>
+      </section>
 
     </main>
 
